@@ -1,0 +1,17 @@
+{
+	"name": "ulink",
+	"private": true,
+	"version": "0.1.0",
+	"type": "module",
+	"scripts": {
+		"build:data": "node scripts/build-opportunities.mjs",
+		"lint": "biome check .",
+		"format": "biome check --write .",
+		"test:e2e": "playwright test",
+		"check:js": "node --check app.js"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.9",
+		"@playwright/test": "^1.57.0"
+	}
+}

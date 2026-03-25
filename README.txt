@@ -4,18 +4,26 @@ Member:
 - Anwar Issaoui
 
 ## Pitch
-Aujourd'hui, nous vous presentons uLink, une application pensee pour repondre a un probleme courant chez les etudiants: la difficulte de trouver rapidement des stages et des bourses adaptes a leur profil.
+uLink est une application qui repond au probleme de recherche longue et repetee de stages et bourses. L'etudiant cree son profil une seule fois, puis uLink propose automatiquement les opportunites les plus pertinentes.
 
-uLink centralise les opportunites de bourses et de stages. L'etudiant cree son profil une seule fois, et l'application propose automatiquement les opportunites les plus pertinentes. En quelques clics, il peut postuler directement.
+## Stack projet
+- Site/app web statique (HTML/CSS/JS)
+- Donnees opportunites generees depuis repos externes
+- Task runner: Task
+- Runtime manager: mise
+- Hooks: lefthook
+- Lint/format: Biome
+- E2E: Playwright
 
-## MVP inclus
-- Formulaire profil etudiant (nom, domaine, ville, remote)
-- Matching automatique des opportunites
-- Tri par pertinence
-- Bouton "Postuler en 1 clic"
-- Sauvegarde locale du profil (localStorage)
+## Sources integrees
+- `../Canadian-Tech-Internships-2026/README.md`
+- `../2026-AI-College-Jobs/README.md`
+- Bourses curatees uLink
 
-## Lancer localement
+## Commandes
 - `cd /Users/anwarito/Desktop/ULINK/tools/Ulink`
-- `python3 -m http.server 5173`
-- Ouvrir `http://localhost:5173`
+- `task bootstrap`
+- `task build-data`
+- `task lint`
+- `task test:e2e`
+- `task dev`

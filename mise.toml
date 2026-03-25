@@ -1,0 +1,14 @@
+[tools]
+node = "24"
+
+[tasks.bootstrap]
+run = "npm install --no-fund --no-audit"
+
+[tasks.build_data]
+run = "npm run build:data"
+
+[tasks.lint]
+run = "npm run lint"
+
+[tasks.test_e2e]
+run = "npm run test:e2e"

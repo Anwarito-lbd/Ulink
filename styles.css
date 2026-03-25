@@ -30,8 +30,19 @@ body {
 }
 
 .hero p {
-	max-width: 720px;
+	max-width: 760px;
 	color: var(--muted);
+}
+
+.meta-badge {
+	margin-top: 0.5rem;
+	display: inline-block;
+	background: #edf2ff;
+	color: #274690;
+	border: 1px solid #d9e4ff;
+	border-radius: 999px;
+	padding: 0.25rem 0.6rem;
+	font-size: 0.85rem;
 }
 
 .grid {
@@ -52,7 +63,8 @@ body {
 
 label {
 	display: block;
-	margin-bottom: 0.75rem;
+	margin-top: 0.75rem;
+	margin-bottom: 0.3rem;
 	font-size: 0.92rem;
 }
 
@@ -67,6 +79,7 @@ button {
 }
 
 button {
+	margin-top: 1rem;
 	background: var(--primary);
 	color: #fff;
 	border-color: var(--primary);
@@ -81,6 +94,7 @@ button {
 }
 
 .row button {
+	margin-top: 0;
 	width: auto;
 }
 
@@ -112,7 +126,7 @@ button {
 
 .meta,
 .desc {
-	margin: 0.25rem 0;
+	margin: 0.2rem 0;
 	color: var(--muted);
 }
 

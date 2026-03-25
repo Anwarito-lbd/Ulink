@@ -1,0 +1,30 @@
+version: '3'
+
+tasks:
+  bootstrap:
+    cmds:
+      - npm install --no-fund --no-audit
+
+  build-data:
+    cmds:
+      - npm run build:data
+
+  lint:
+    cmds:
+      - npm run lint
+
+  format:
+    cmds:
+      - npm run format
+
+  check:
+    cmds:
+      - npm run check:js
+
+  test:e2e:
+    cmds:
+      - npm run test:e2e
+
+  dev:
+    cmds:
+      - python3 -m http.server 5173

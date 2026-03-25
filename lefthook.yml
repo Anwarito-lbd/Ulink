@@ -1,0 +1,7 @@
+pre-commit:
+  parallel: true
+  commands:
+    lint:
+      run: npm run lint
+    js-check:
+      run: npm run check:js

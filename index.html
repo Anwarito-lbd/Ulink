@@ -10,40 +10,45 @@
     <header class="hero">
       <h1>uLink</h1>
       <p>
-        Une seule fois: cree ton profil. Ensuite, uLink te propose automatiquement les
-        stages et bourses adaptes a ton profil.
+        Une seule fois: cree ton profil. uLink centralise les stages et bourses puis te
+        propose les opportunites les plus pertinentes.
       </p>
+      <div id="dataMeta" class="meta-badge">Chargement des donnees...</div>
     </header>
 
     <main class="grid">
       <section class="card">
         <h2>Ton profil</h2>
         <form id="profileForm">
-          <label>
-            Nom
-            <input type="text" id="name" required placeholder="Anwar Issaoui" />
-          </label>
-          <label>
-            Domaine
-            <select id="domain" required>
-              <option value="">Choisir</option>
-              <option value="software">Software Engineering</option>
-              <option value="ai">AI / ML</option>
-              <option value="data">Data Science</option>
-              <option value="cyber">Cybersecurity</option>
-            </select>
-          </label>
-          <label>
-            Ville
-            <input type="text" id="city" required placeholder="Ottawa" />
-          </label>
-          <label>
-            Remote
-            <select id="remote" required>
-              <option value="yes">Oui</option>
-              <option value="no">Non</option>
-            </select>
-          </label>
+          <label for="name">Nom</label>
+          <input type="text" id="name" required placeholder="Anwar Issaoui" />
+
+          <label for="domain">Domaine</label>
+          <select id="domain" required>
+            <option value="">Choisir</option>
+            <option value="software">Software Engineering</option>
+            <option value="ai">AI / ML</option>
+            <option value="data">Data Science</option>
+            <option value="cyber">Cybersecurity</option>
+          </select>
+
+          <label for="city">Ville</label>
+          <input type="text" id="city" required placeholder="Ottawa" />
+
+          <label for="remote">Remote</label>
+          <select id="remote" required>
+            <option value="yes">Oui</option>
+            <option value="no">Non</option>
+            <option value="any">Peu importe</option>
+          </select>
+
+          <label for="kind">Type</label>
+          <select id="kind" required>
+            <option value="all">Stages + Bourses</option>
+            <option value="stage">Stages</option>
+            <option value="bourse">Bourses</option>
+          </select>
+
           <button type="submit">Enregistrer le profil</button>
         </form>
       </section>
@@ -69,6 +74,6 @@
       </li>
     </template>
 
-    <script src="./app.js"></script>
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
