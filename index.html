@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>uLink | Stages & Bourses</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>uLink</h1>
+      <p>
+        Une seule fois: cree ton profil. Ensuite, uLink te propose automatiquement les
+        stages et bourses adaptes a ton profil.
+      </p>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>Ton profil</h2>
+        <form id="profileForm">
+          <label>
+            Nom
+            <input type="text" id="name" required placeholder="Anwar Issaoui" />
+          </label>
+          <label>
+            Domaine
+            <select id="domain" required>
+              <option value="">Choisir</option>
+              <option value="software">Software Engineering</option>
+              <option value="ai">AI / ML</option>
+              <option value="data">Data Science</option>
+              <option value="cyber">Cybersecurity</option>
+            </select>
+          </label>
+          <label>
+            Ville
+            <input type="text" id="city" required placeholder="Ottawa" />
+          </label>
+          <label>
+            Remote
+            <select id="remote" required>
+              <option value="yes">Oui</option>
+              <option value="no">Non</option>
+            </select>
+          </label>
+          <button type="submit">Enregistrer le profil</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <div class="row">
+          <h2>Opportunites recommandees</h2>
+          <button id="refreshBtn" type="button">Rafraichir</button>
+        </div>
+        <div id="summary" class="summary">Aucun profil charge.</div>
+        <ul id="opportunityList" class="list"></ul>
+      </section>
+    </main>
+
+    <template id="itemTemplate">
+      <li class="item">
+        <div>
+          <h3 class="title"></h3>
+          <p class="meta"></p>
+          <p class="desc"></p>
+        </div>
+        <a class="apply" target="_blank" rel="noreferrer">Postuler</a>
+      </li>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
