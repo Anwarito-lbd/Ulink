@@ -1,6 +1,11 @@
 {
 	"$schema": "https://biomejs.dev/schemas/2.4.9/schema.json",
 	"files": {
-		"includes": ["**", "!data/opportunities.json"]
+		"includes": [
+			"**",
+			"!data/opportunities.json",
+			"!test-results",
+			"!playwright-report"
+		]
 	}
 }
